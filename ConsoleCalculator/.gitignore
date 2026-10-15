@@ -1,0 +1,45 @@
+@"
+# --- Qt / MOC ---
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+*.moc
+*_autogen/
+
+# --- Сборка ---
+build/
+build-*/
+debug/
+release/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeUserPresets.json
+Makefile
+*.pro.user
+*.pro.user.*
+
+# --- Объектные файлы ---
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# --- Редакторы / IDE ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.user
+*.swp
+
+# --- Системное ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Qt Creator (на всякий) ---
+*.autosave
+"@ | Out-File -Encoding utf8 .gitignore
